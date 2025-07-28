@@ -1,28 +1,30 @@
-import headphone1 from "../../assets/headphone1.jpg"
-import headphone2 from "../../assets/headphone2.jpg"
-import headphone3 from "../../assets/headphone3.jpg"
-import headphone4 from "../../assets/headphone4.jpg"
-import headphone5 from "../../assets/headphone5.jpg"
-import headphone6 from "../../assets/headphone6.jpg"
-import headphone7 from "../../assets/headphone7.jpg"
-import headphone8 from "../../assets/headphone8.jpg"
-export function ElectronicSection(){
+import beej1 from "../../assets/beej1.jpg"
+import beej2 from "../../assets/beej2.jpg"
+import beej3 from "../../assets/beej3.jpg"
+import beej4 from "../../assets/beej4.jpg"
+import beej5 from "../../assets/beej5.jpg"
+import beej6 from "../../assets/beej6.jpg"
+export function KhadbeejSection(){
     const items=[
-      {id:1,name:"realme Teach",Image:headphone1,price:"10000",oldprice:"12000"},
-      {id:2,name:"realme Teach",Image:headphone2,price:"10000",oldprice:"12000"},
-      {id:3,name:"realme Teach",Image:headphone3,price:"10000",oldprice:"12000"},
-      {id:4,name:"realme Teach",Image:headphone4,price:"10000",oldprice:"12000"},
-      {id:5,name:"realme Teach",Image:headphone5,price:"10000",oldprice:"12000"},
-      {id:6,name:"realme Teach",Image:headphone6,price:"10000",oldprice:"12000"},
-      {id:7,name:"realme Teach",Image:headphone7,price:"10000",oldprice:"12000"},
-      {id:8,name:"realme Teach",Image:headphone8,price:"10000",oldprice:"12000"}
+      {id:1,name:"realme Teach",Image:beej1,price:"10000",oldprice:"12000"},
+      {id:2,name:"realme Teach",Image:beej2,price:"10000",oldprice:"12000"},
+      {id:3,name:"realme Teach",Image:beej3,price:"10000",oldprice:"12000"},
+      {id:4,name:"realme Teach",Image:beej4,price:"10000",oldprice:"12000"},
+      {id:5,name:"realme Teach",Image:beej5,price:"10000",oldprice:"12000"},
+      {id:6,name:"realme Teach",Image:beej6,price:"10000",oldprice:"12000"},
+      {id:7,name:"realme Teach",Image:beej1,price:"10000",oldprice:"12000"},
+      {id:8,name:"realme Teach",Image:beej2,price:"10000",oldprice:"12000"},
+      {id:9,name:"realme Teach",Image:beej3,price:"10000",oldprice:"12000"},
+      {id:10,name:"realme Teach",Image:beej4,price:"10000",oldprice:"12000"},
+      {id:11,name:"realme Teach",Image:beej5,price:"10000",oldprice:"12000"},
+      {id:12,name:"realme Teach",Image:beej6,price:"10000",oldprice:"12000"},
     ]
     return(
         <>
           <div className="w-full flex justify-center items-center">
             <div className="w-[90%] flex flex-col gap-2 rounded-lg mt-4 bg-gray-100">
               <div className="flex justify-between items-center">
-                <h1 className="text-2xl font-bold ml-7 mt-2">Electronics Item</h1>
+                <h1 className="text-2xl font-bold ml-7 mt-2">Khadbeej</h1>
                 <button className="bg-[#489fb5] text-white p-2 rounded-md m-2 flex items-center gap-1 w-15 flex-shrink-0 flex justify-center">
                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                 </button>

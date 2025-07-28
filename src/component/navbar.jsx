@@ -22,13 +22,12 @@ export function Navbar(){
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex w-[50%] justify-center items-center">
+        <nav className="hidden md:flex w-[40%] justify-center items-center">
           <ul className="flex justify-evenly items-center w-full">
               <a href=""><li>Home</li></a>
-              <a href=""><li>Electronics</li></a>
-              <a href=""><li>grocery</li></a>
-              <a href=""><li>fashion</li></a>
+              <a href=""><li>Dashbord</li></a>
               <a href=""><li>contact us</li></a>
+              <HiShoppingCart className="h-6 w-6 cursor-pointer" />
               <button className="bg-[#489fb5] text-white p-2 rounded-md cursor-pointer hover:scale-110 transition-all duration-300">login/signup</button>
             </ul>
         </nav>
@@ -65,9 +64,7 @@ export function Navbar(){
       {menuOpen && (
         <nav className="md:hidden bg-white shadow-lg">
           <ul className="flex flex-col items-center p-4">
-            <a href="" className="py-2"><li>Electronics</li></a>
-            <a href="" className="py-2"><li>grocery</li></a>
-            <a href="" className="py-2"><li>fashion</li></a>
+            <a href="" className="py-2"><li>Dashbord</li></a>
             <a href="" className="py-2"><li>contact us</li></a>
           </ul>
         </nav>

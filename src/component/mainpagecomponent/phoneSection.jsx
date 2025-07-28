@@ -1,22 +1,24 @@
-import headphone1 from "../../assets/headphone1.jpg"
-import headphone2 from "../../assets/headphone2.jpg"
-import headphone3 from "../../assets/headphone3.jpg"
-import headphone4 from "../../assets/headphone4.jpg"
-import headphone5 from "../../assets/headphone5.jpg"
-import headphone6 from "../../assets/headphone6.jpg"
-import headphone7 from "../../assets/headphone7.jpg"
-import headphone8 from "../../assets/headphone8.jpg"
-export function ElectronicSection(){
-    const items=[
-      {id:1,name:"realme Teach",Image:headphone1,price:"10000",oldprice:"12000"},
-      {id:2,name:"realme Teach",Image:headphone2,price:"10000",oldprice:"12000"},
-      {id:3,name:"realme Teach",Image:headphone3,price:"10000",oldprice:"12000"},
-      {id:4,name:"realme Teach",Image:headphone4,price:"10000",oldprice:"12000"},
-      {id:5,name:"realme Teach",Image:headphone5,price:"10000",oldprice:"12000"},
-      {id:6,name:"realme Teach",Image:headphone6,price:"10000",oldprice:"12000"},
-      {id:7,name:"realme Teach",Image:headphone7,price:"10000",oldprice:"12000"},
-      {id:8,name:"realme Teach",Image:headphone8,price:"10000",oldprice:"12000"}
-    ]
+import phone1 from "../../assets/phone1.jpg"
+import phone2 from "../../assets/phone2.jpg"
+import phone3 from "../../assets/phone3.jpg"
+import phone4 from "../../assets/phone4.jpg"
+import phone5 from "../../assets/phone5.jpg"
+import phone6 from "../../assets/phone6.jpg"
+import phone7 from "../../assets/phone7.jpg"
+import phone8 from "../../assets/phone8.jpg"
+import phone9 from "../../assets/phone9.jpg"
+export function PhoneSection(){
+  const items=[
+    {id:1,name:"vivo x100",Image:phone1,price:"10000",oldprice:"12000"},
+    {id:2,name:"realme 10",Image:phone2,price:"10000",oldprice:"12000"},
+    {id:3,name:"realme 10 Pro",Image:phone3,price:"10000",oldprice:"12000"},
+    {id:4,name:"realme 10 Pro",Image:phone4,price:"10000",oldprice:"12000"},
+    {id:5,name:"realme 10 Pro",Image:phone5,price:"10000",oldprice:"12000"},
+    {id:6,name:"realme 10 Pro",Image:phone6,price:"10000",oldprice:"12000"},
+    {id:7,name:"realme 10 Pro",Image:phone7,price:"10000",oldprice:"12000"},
+    {id:8,name:"iphone 15 pro",Image:phone8,price:"10000",oldprice:"12000"},
+    {id:9,name:"iphone 16",Image:phone9,price:"10000",oldprice:"12000"},
+  ]
     return(
         <>
           <div className="w-full flex justify-center items-center">
