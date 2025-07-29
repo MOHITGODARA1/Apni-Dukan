@@ -27,7 +27,7 @@ export function Loginpage(){
                 className=' px-2 border border-black w-[90%] mt-1 h-8 rounded-lg outline-none'
                 id='name' 
                 placeholder='Enter Number'/>
-                {errors.name && <p className='text-[5px] text-red-600'>Number is required</p>}
+                {errors.Number && <p className='text-[5px] text-red-600'>Number is required</p>}
               </div>
               <div>
                 <button type='Submit' className='w-[90%] bg-[#489fb5] h-9 text-white mt-6 rounded-lg'>Genrate OTP</button>
