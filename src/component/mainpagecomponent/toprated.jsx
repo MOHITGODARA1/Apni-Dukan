@@ -14,10 +14,10 @@ export function TopRated(){
     return(
         <>
           <div className="w-full flex justify-center items-center mt-4">
-            <div className="w-[90%] bg-[#e0aaff] rounded-lg flex flex-col justify-center items-center">
+            <div className="w-[90%] bg-[#EBD6FF] rounded-lg flex flex-col justify-center items-center">
             <div className="flex justify-between items-center w-full">
-                <h1 className="text-2xl font-bold ml-7 mt-2">Top Rated</h1>
-                <button className="bg-[#489fb5] text-white p-2 rounded-md m-2 flex items-center gap-1 w-15 flex-shrink-0 flex justify-center">
+                <h1 className="text-2xl font-bold md:ml-7 ml-2 mt-2">Top Rated</h1>
+                <button className="bg-black text-white p-2 rounded-md m-2 flex items-center gap-1 w-15 flex-shrink-0 flex justify-center">
                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                 </button>
               </div>

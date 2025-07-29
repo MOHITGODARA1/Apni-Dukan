@@ -5,6 +5,8 @@ import { ElectronicSection } from "../component/mainpagecomponent/electronicsect
 import { PhoneSection } from "../component/mainpagecomponent/phoneSection";
 import { TopRated } from "../component/mainpagecomponent/toprated";
 import { KhadbeejSection } from "../component/mainpagecomponent/khadbeejSection";
+
+
 export function MainPage() {
   return (
     <div>

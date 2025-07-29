@@ -24,7 +24,7 @@ export function KhadbeejSection(){
           <div className="w-full flex justify-center items-center">
             <div className="w-[90%] flex flex-col gap-2 rounded-lg mt-4 bg-gray-100">
               <div className="flex justify-between items-center">
-                <h1 className="text-2xl font-bold ml-7 mt-2">Khadbeej</h1>
+                <h1 className="text-2xl font-bold md:ml-7 ml-2 mt-2">Khadbeej</h1>
                 <button className="bg-[#489fb5] text-white p-2 rounded-md m-2 flex items-center gap-1 w-15 flex-shrink-0 flex justify-center">
                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
                 </button>
