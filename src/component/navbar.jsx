@@ -39,7 +39,7 @@ export function Navbar(){
         {/* Mobile Menu Button & Icons */}
         <div className="md:hidden flex items-center gap-2 sm:gap-4">
           <HiShoppingCart className="h-6 w-6 cursor-pointer" />
-          <button className="bg-[#489fb5] text-white p-2 rounded-md text-sm">
+          <button className="bg-[#489fb5] text-white p-2 rounded-md text-sm" onClick={handelLogin}>
             login/signup
           </button>
           <button onClick={() => setMenuOpen(!menuOpen)}>
