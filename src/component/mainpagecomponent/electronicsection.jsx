@@ -33,7 +33,7 @@ export function ElectronicSection(){
                         </div>
                         <div className="h-[40%] flex flex-col justify-between">
                           <p className="text-sm truncate font-light ">{item.name}</p>
-                          <p className="text-[12px] font-semibold">₹{item.price} <span className="text-gray-500 line-through ml-1">₹{item.oldprice}</span></p>
+                          <p className="text-[10px] font-semibold">₹{item.price} <span className="text-gray-500 line-through ml-1">₹{item.oldprice}</span></p>
                           <p className="text-[14px] font-semibold text-red-700">Hot Deal</p>
                         </div>
                       </div>
