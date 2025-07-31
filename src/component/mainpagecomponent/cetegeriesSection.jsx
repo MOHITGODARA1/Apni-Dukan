@@ -3,14 +3,16 @@ import Grosery from "../../assets/grocery.png"
 import electronics from "../../assets/leptop2.png"
 import khadbeej from "../../assets/khadbeej.png"
 import fastfood from "../../assets/fastfood.png"
-
+// import { useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
 export function CategoriesSection(){
+    // const nevigate=useNavigate();
     const items=[
-      {id:1,name:"Phone",image:phoneicon},
-      {id:2,name:"Grosery",image:Grosery},
-      {id:3,name:"Electronics",image:electronics},
-      {id:4,name:"Khad Beej",image:khadbeej},
-      {id:5,name:"Fast Food",image:fastfood},
+      {id:1,name:"Phone",image:phoneicon,link:"/phonepage"},
+      {id:2,name:"Grocery",image:Grosery,link:"/Grocerypage"},
+      {id:3,name:"Electronics",image:electronics,link:"/Electronicpgae"},
+      {id:4,name:"Khad Beej",image:khadbeej,link:"/khadbeejpage"},
+      {id:5,name:"Fast Food",image:fastfood,link:"/fastfoodpage"},
     ]
     return(
         <>
@@ -19,12 +21,12 @@ export function CategoriesSection(){
               {
                 items.map((item)=>{
                   return(
-                    <div className="h-full flex justify-center items-center flex-col w-50 flex-shrink-0" key={item.id}>
-                      <a href="#" className="flex flex-col justify-center items-center">
+                    <Link to={item.link}>
+                    <div className="h-full flex justify-center cursor-pointer items-center flex-col w-50 flex-shrink-0" key={item.id}>
                         <img src={item.image} alt="phoneicon" className="w-15 h-18"/>
                         <p>{item.name}</p>
-                      </a>
                     </div>
+                    </Link>
                   )
                 })
               }

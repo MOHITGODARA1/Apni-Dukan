@@ -8,8 +8,6 @@ export function TopRated(){
       {id:2,name:"phone",Image:phone1,deal:"Wishlist"},
       {id:3,name:"headset",Image:headphone2,deal:"Grab Now"},
       {id:4,name:"phone",Image:phone2,deal:"Big Saving"},
-      {id:5,name:"headset",Image:headphone1,deal:"Popular"},
-      {id:6,name:"phone",Image:phone1,deal:"Explore Now"}
     ]
     return(
         <>

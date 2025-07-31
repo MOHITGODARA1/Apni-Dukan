@@ -4,9 +4,6 @@ import phone3 from "../../assets/phone3.jpg"
 import phone4 from "../../assets/phone4.jpg"
 import phone5 from "../../assets/phone5.jpg"
 import phone6 from "../../assets/phone6.jpg"
-import phone7 from "../../assets/phone7.jpg"
-import phone8 from "../../assets/phone8.jpg"
-import phone9 from "../../assets/phone9.jpg"
 export function PhoneSection(){
   const items=[
     {id:1,name:"vivo x100",Image:phone1,price:"10000",oldprice:"12000"},
@@ -15,14 +12,11 @@ export function PhoneSection(){
     {id:4,name:"realme 10 Pro",Image:phone4,price:"10000",oldprice:"12000"},
     {id:5,name:"realme 10 Pro",Image:phone5,price:"10000",oldprice:"12000"},
     {id:6,name:"realme 10 Pro",Image:phone6,price:"10000",oldprice:"12000"},
-    {id:7,name:"realme 10 Pro",Image:phone7,price:"10000",oldprice:"12000"},
-    {id:8,name:"iphone 15 pro",Image:phone8,price:"10000",oldprice:"12000"},
-    {id:9,name:"iphone 16",Image:phone9,price:"10000",oldprice:"12000"},
   ]
     return(
         <>
           <div className="w-full flex justify-center items-center">
-            <div className="w-[90%] flex flex-col gap-2 rounded-lg mt-4 bg-gray-100">
+            <div className="w-[90%] flex flex-col gap-2 rounded-lg mt-4 ">
               <div className="flex justify-between items-center">
                 <h1 className="text-2xl font-bold md:ml-7 ml-2 mt-2">Phone Section</h1>
                 <button className="bg-[#489fb5] text-white p-2 rounded-md m-2 flex items-center gap-1 w-15 flex-shrink-0 justify-center">

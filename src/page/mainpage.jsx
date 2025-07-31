@@ -5,8 +5,9 @@ import { ElectronicSection } from "../component/mainpagecomponent/electronicsect
 import { PhoneSection } from "../component/mainpagecomponent/phoneSection";
 import { TopRated } from "../component/mainpagecomponent/toprated";
 import { KhadbeejSection } from "../component/mainpagecomponent/khadbeejSection";
-
-
+import { LargeAppliance } from "../component/mainpagecomponent/largeappliance";
+import { Grocery } from "../component/mainpagecomponent/grocery";
+import { Footer } from "../component/mainpagecomponent/footer";
 export function MainPage() {
   return (
     <div>
@@ -14,9 +15,12 @@ export function MainPage() {
       <CategoriesSection />
       <SalePoster />
       <ElectronicSection />
+      <LargeAppliance />
       <PhoneSection />
       <TopRated />
       <KhadbeejSection />
+      <Grocery />
+      <Footer />
     </div>
   );
 };

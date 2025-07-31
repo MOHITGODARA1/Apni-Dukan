@@ -4,8 +4,6 @@ import headphone3 from "../../assets/headphone3.jpg"
 import headphone4 from "../../assets/headphone4.jpg"
 import headphone5 from "../../assets/headphone5.jpg"
 import headphone6 from "../../assets/headphone6.jpg"
-import headphone7 from "../../assets/headphone7.jpg"
-import headphone8 from "../../assets/headphone8.jpg"
 export function ElectronicSection(){
     const items=[
       {id:1,name:"realme Teach",Image:headphone1,price:"10000",oldprice:"12000"},
@@ -14,13 +12,11 @@ export function ElectronicSection(){
       {id:4,name:"realme Teach",Image:headphone4,price:"10000",oldprice:"12000"},
       {id:5,name:"realme Teach",Image:headphone5,price:"10000",oldprice:"12000"},
       {id:6,name:"realme Teach",Image:headphone6,price:"10000",oldprice:"12000"},
-      {id:7,name:"realme Teach",Image:headphone7,price:"10000",oldprice:"12000"},
-      {id:8,name:"realme Teach",Image:headphone8,price:"10000",oldprice:"12000"}
     ]
     return(
         <>
           <div className="w-full flex justify-center items-center">
-            <div className="w-[90%] flex flex-col gap-2 rounded-lg mt-4 bg-[#C1E4E0]">
+            <div className="w-[90%] flex flex-col gap-2 rounded-lg mt-4">
               <div className="flex justify-between items-center">
                 <h1 className="text-2xl font-bold md:ml-7 ml-2 mt-2">Electronics Item</h1>
                 <button className="bg-black text-white p-2 rounded-md m-2 flex items-center gap-1 w-15 flex-shrink-0 justify-center">

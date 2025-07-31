@@ -12,17 +12,11 @@ export function KhadbeejSection(){
       {id:4,name:"realme Teach",Image:beej4,price:"10000",oldprice:"12000"},
       {id:5,name:"realme Teach",Image:beej5,price:"10000",oldprice:"12000"},
       {id:6,name:"realme Teach",Image:beej6,price:"10000",oldprice:"12000"},
-      {id:7,name:"realme Teach",Image:beej1,price:"10000",oldprice:"12000"},
-      {id:8,name:"realme Teach",Image:beej2,price:"10000",oldprice:"12000"},
-      {id:9,name:"realme Teach",Image:beej3,price:"10000",oldprice:"12000"},
-      {id:10,name:"realme Teach",Image:beej4,price:"10000",oldprice:"12000"},
-      {id:11,name:"realme Teach",Image:beej5,price:"10000",oldprice:"12000"},
-      {id:12,name:"realme Teach",Image:beej6,price:"10000",oldprice:"12000"},
     ]
     return(
         <>
           <div className="w-full flex justify-center items-center">
-            <div className="w-[90%] flex flex-col gap-2 rounded-lg mt-4 bg-gray-100">
+            <div className="w-[90%] flex flex-col gap-2 rounded-lg mt-4">
               <div className="flex justify-between items-center">
                 <h1 className="text-2xl font-bold md:ml-7 ml-2 mt-2">Khadbeej</h1>
                 <button className="bg-[#489fb5] text-white p-2 rounded-md m-2 flex items-center gap-1 w-15 flex-shrink-0  justify-center">
