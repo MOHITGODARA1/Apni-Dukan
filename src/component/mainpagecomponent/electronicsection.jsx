@@ -31,8 +31,8 @@ export function ElectronicSection(){
                         <div className="h-[60%] w-full">
                           <img src={item.Image} alt="not found" className="h-full w-full object-contain" />
                         </div>
-                        <div className="h-[40%] flex flex-col">
-                          <p className="text-sm truncate font-light">{item.name}</p>
+                        <div className="h-[40%] flex flex-col justify-between">
+                          <p className="text-sm truncate font-light ">{item.name}</p>
                           <p className="text-[12px] font-semibold">₹{item.price} <span className="text-gray-500 line-through ml-1">₹{item.oldprice}</span></p>
                           <p className="text-[14px] font-semibold text-red-700">Hot Deal</p>
                         </div>
