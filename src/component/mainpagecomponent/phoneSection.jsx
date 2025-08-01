@@ -1,17 +1,14 @@
-import phone1 from "../../assets/phone1.jpg"
-import phone2 from "../../assets/phone2.jpg"
-import phone3 from "../../assets/phone3.jpg"
-import phone4 from "../../assets/phone4.jpg"
-import phone5 from "../../assets/phone5.jpg"
-import phone6 from "../../assets/phone6.jpg"
+import phone1 from "../../assets/phone.png"
+import { useNavigate } from "react-router-dom"
 export function PhoneSection(){
+  const nevigat=useNavigate();
   const items=[
-    {id:1,name:"vivo x100",Image:phone1,price:"10000",oldprice:"12000"},
-    {id:2,name:"realme 10",Image:phone2,price:"10000",oldprice:"12000"},
-    {id:3,name:"realme 10 Pro",Image:phone3,price:"10000",oldprice:"12000"},
-    {id:4,name:"realme 10 Pro",Image:phone4,price:"10000",oldprice:"12000"},
-    {id:5,name:"realme 10 Pro",Image:phone5,price:"10000",oldprice:"12000"},
-    {id:6,name:"realme 10 Pro",Image:phone6,price:"10000",oldprice:"12000"},
+    {id:1,name:"vivo x100",Image:phone1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+    {id:2,name:"realme 10",Image:phone1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+    {id:3,name:"realme 10 Pro",Image:phone1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+    {id:4,name:"realme 10 Pro",Image:phone1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+    {id:5,name:"realme 10 Pro",Image:phone1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+    {id:6,name:"realme 10 Pro",Image:phone1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
   ]
     return(
         <>
@@ -27,7 +24,11 @@ export function PhoneSection(){
                 {
                   items.map((item)=>{
                     return(
-                      <div className="h-40 mt-4 w-22 flex flex-col gap-2 rounded-lg cursor-pointer" key={item.id}>
+                      <div className="h-40 mt-4 w-22 flex flex-col gap-2 rounded-lg cursor-pointer" 
+                      key={item.id}
+                      onClick={()=>{
+                        nevigat("/Product",{state:item});
+                      }}>
                         <div className="h-[60%] w-full">
                           <img src={item.Image} alt="not found" className="h-full w-full object-contain" />
                         </div>

@@ -1,17 +1,14 @@
-import g1 from "../../assets/g1.jpg"
-import g2 from "../../assets/g2.jpg"
-import g3 from "../../assets/g3.jpg"
-import g4 from "../../assets/g4.jpg"
-import g5 from "../../assets/g5.jpg"
-import g6 from "../../assets/g6.jpg"
+import g1 from "../../assets/g1.png"
+import { useNavigate } from "react-router-dom"
 export function Grocery(){
+  const navigate=useNavigate();
   const items=[
-        {id:1,name:"realme Teach",Image:g1,price:"10000",oldprice:"12000"},
-        {id:2,name:"realme Teach",Image:g2,price:"10000",oldprice:"12000"},
-        {id:3,name:"realme Teach",Image:g3,price:"10000",oldprice:"12000"},
-        {id:4,name:"realme Teach",Image:g4,price:"10000",oldprice:"12000"},
-        {id:5,name:"realme Teach",Image:g5,price:"10000",oldprice:"12000"},
-        {id:6,name:"realme Teach",Image:g6,price:"10000",oldprice:"12000"}
+        {id:1,name:"realme Teach",Image:g1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+        {id:2,name:"realme Teach",Image:g1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+        {id:3,name:"realme Teach",Image:g1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+        {id:4,name:"realme Teach",Image:g1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+        {id:5,name:"realme Teach",Image:g1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+        {id:6,name:"realme Teach",Image:g1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."}
       ]
       return(
           <>
@@ -27,7 +24,11 @@ export function Grocery(){
                   {
                     items.map((item)=>{
                       return(
-                        <div className="h-40 mt-4 w-22 flex flex-col gap-2 rounded-lg cursor-pointer" key={item.id}>
+                        <div className="h-40 mt-4 w-22 flex flex-col gap-2 rounded-lg cursor-pointer"
+                        key={item.id}
+                        onClick={()=>{
+                        navigate("/Product",{state:item});
+                      }}>
                           <div className="h-[60%] w-full">
                             <img src={item.Image} alt="not found" className="h-full w-full object-contain" />
                           </div>

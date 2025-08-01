@@ -1,17 +1,14 @@
-import beej1 from "../../assets/beej1.jpg"
-import beej2 from "../../assets/beej2.jpg"
-import beej3 from "../../assets/beej3.jpg"
-import beej4 from "../../assets/beej4.jpg"
-import beej5 from "../../assets/beej5.jpg"
-import beej6 from "../../assets/beej6.jpg"
+import beej1 from "../../assets/seed.png"
+import { useNavigate } from "react-router-dom"
 export function KhadbeejSection(){
+  const nevigat=useNavigate();
     const items=[
-      {id:1,name:"realme Teach",Image:beej1,price:"10000",oldprice:"12000"},
-      {id:2,name:"realme Teach",Image:beej2,price:"10000",oldprice:"12000"},
-      {id:3,name:"realme Teach",Image:beej3,price:"10000",oldprice:"12000"},
-      {id:4,name:"realme Teach",Image:beej4,price:"10000",oldprice:"12000"},
-      {id:5,name:"realme Teach",Image:beej5,price:"10000",oldprice:"12000"},
-      {id:6,name:"realme Teach",Image:beej6,price:"10000",oldprice:"12000"},
+      {id:1,name:"realme Teach",Image:beej1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:2,name:"realme Teach",Image:beej1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:3,name:"realme Teach",Image:beej1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:4,name:"realme Teach",Image:beej1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:5,name:"realme Teach",Image:beej1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:6,name:"realme Teach",Image:beej1,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
     ]
     return(
         <>
@@ -27,7 +24,11 @@ export function KhadbeejSection(){
                 {
                   items.map((item)=>{
                     return(
-                      <div className="h-40 mt-4 w-22 flex flex-col gap-2 rounded-lg cursor-pointer" key={item.id}>
+                      <div className="h-40 mt-4 w-22 flex flex-col gap-2 rounded-lg cursor-pointer" 
+                      key={item.id}
+                      onClick={()=>{
+                        nevigat("/Product",{state:item});
+                      }}>
                         <div className="h-[60%] w-full">
                           <img src={item.Image} alt="not found" className="h-full w-full object-contain" />
                         </div>

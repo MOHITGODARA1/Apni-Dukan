@@ -1,17 +1,14 @@
-import headphone1 from "../../assets/headphone1.jpg"
-import headphone2 from "../../assets/headphone2.jpg"
-import headphone3 from "../../assets/headphone3.jpg"
-import headphone4 from "../../assets/headphone4.jpg"
-import headphone5 from "../../assets/headphone5.jpg"
-import headphone6 from "../../assets/headphone6.jpg"
+import headphone from "../../assets/headphone.png"
+import { useNavigate } from "react-router-dom"
 export function ElectronicSection(){
+    const nevigat=useNavigate();
     const items=[
-      {id:1,name:"realme Teach",Image:headphone1,price:"10000",oldprice:"12000"},
-      {id:2,name:"realme Teach",Image:headphone2,price:"10000",oldprice:"12000"},
-      {id:3,name:"realme Teach",Image:headphone3,price:"10000",oldprice:"12000"},
-      {id:4,name:"realme Teach",Image:headphone4,price:"10000",oldprice:"12000"},
-      {id:5,name:"realme Teach",Image:headphone5,price:"10000",oldprice:"12000"},
-      {id:6,name:"realme Teach",Image:headphone6,price:"10000",oldprice:"12000"},
+      {id:1,name:"realme Teach",Image:headphone,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:2,name:"realme 10 pro",Image:headphone,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:3,name:"realme 11 pro",Image:headphone,price:"18,000",oldprice:"21,000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:4,name:"realme Teach",Image:headphone,price:"20,000",oldprice:"26,000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:5,name:"realme Teach",Image:headphone,price:"15,000",oldprice:"16000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:6,name:"realme Teach",Image:headphone,price:"10000",oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
     ]
     return(
         <>
@@ -27,7 +24,11 @@ export function ElectronicSection(){
                 {
                   items.map((item)=>{
                     return(
-                      <div className="h-40 mt-4 w-22 flex flex-col gap-2 rounded-lg cursor-pointer" key={item.id}>
+                      <div className="h-40 mt-4 w-22 flex flex-col gap-2 rounded-lg cursor-pointer" 
+                      key={item.id}
+                      onClick={()=>{
+                        nevigat("/Product",{state:item});
+                      }}>
                         <div className="h-[60%] w-full">
                           <img src={item.Image} alt="not found" className="h-full w-full object-contain" />
                         </div>

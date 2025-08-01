@@ -7,6 +7,7 @@ import { KhadBeejPage} from "./page/khadbeejpage"
 import { ElectronicsPage } from "./page/Electronicpgae"
 import { FastFoodpage } from "./page/fastfoodpage"
 import { Grocerypage } from "./page/Grocerypage"  
+import { ProductPage } from "./page/Product"
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
         <Route path="/Electronicpgae" element={<ElectronicsPage />} />
         <Route path="/fastfoodpage" element={<FastFoodpage />} />
         <Route path="/Grocerypage" element={<Grocerypage />} />
+        <Route path="/Product" element={<ProductPage />} />
       </Routes>
     </>
   )

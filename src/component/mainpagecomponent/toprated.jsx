@@ -1,7 +1,7 @@
-import headphone1 from "../../assets/headphone1.jpg"
-import phone1 from "../../assets/phone1.jpg"
-import phone2 from "../../assets/phone2.jpg"
-import headphone2 from "../../assets/headphone2.jpg"
+import headphone1 from "../../assets/headphone.png"
+import phone1 from "../../assets/phone.png"
+import phone2 from "../../assets/phone.png"
+import headphone2 from "../../assets/headphone.png"
 export function TopRated(){
     const items=[
       {id:1,name:"headset",Image:headphone1,deal:"Explore Now"},
