@@ -1,7 +1,7 @@
 import logo from "../assets/logo.png"
 import { useState } from "react";
 import { HiMenu, HiX, HiShoppingCart } from "react-icons/hi";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 
 export function Navbar(){
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,14 +31,18 @@ export function Navbar(){
               <a href=""><li>Home</li></a>
               <a href=""><li>Dashbord</li></a>
               <a href=""><li>contact us</li></a>
-              <HiShoppingCart className="h-6 w-6 cursor-pointer" />
+              <Link to="/Cartpage">
+                <HiShoppingCart className="h-6 w-6 cursor-pointer"/>
+              </Link>
               <button className="bg-[#489fb5] text-white p-2 rounded-md cursor-pointer hover:scale-110 transition-all duration-300" onClick={handelLogin}>login/signup</button>
             </ul>
         </nav>
 
         {/* Mobile Menu Button & Icons */}
         <div className="md:hidden flex items-center gap-2 sm:gap-4">
-          <HiShoppingCart className="h-6 w-6 cursor-pointer" />
+          <Link to="/Cartpage">
+            <HiShoppingCart className="h-6 w-6 cursor-pointer"/>
+          </Link>
           <button className="bg-[#489fb5] text-white p-2 rounded-md text-sm" onClick={handelLogin}>
             login/signup
           </button>

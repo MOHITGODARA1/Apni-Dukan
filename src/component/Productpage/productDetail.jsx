@@ -1,7 +1,11 @@
 import React,{useState} from "react"
 import { HiMenu, HiX, HiShoppingCart } from "react-icons/hi";
+import { UseCart } from "../storedata/cartdata";
+
 export function ProductDetail({product}){
+  const {dispatch}=UseCart();
   const [value,setvalue]=useState(0);
+  // const [data,setdata]=useState();
   function handelminus(){
     if(value>0){
       setvalue(value-1);
@@ -9,6 +13,17 @@ export function ProductDetail({product}){
   }
   function handelplus(){
     setvalue(value+1);
+  }
+  function handeldata(){
+    if(value===0){
+      return alert("select the item");
+    }
+    const cartitem={
+      ...product,
+      quantity:value,
+    }
+    dispatch({type:"ADD_TO_CART",payload:cartitem});
+    alert("item add");
   }
   return(
     <>
@@ -37,7 +52,7 @@ export function ProductDetail({product}){
               </div>
           </div>
           <div className="w-full md:h-9 h-26  flex md:flex-row flex-col items-center md:mt-5 mt-8">
-              <div className="md:w-[40%] w-[90%] md:h-full h-[40%]  flex justify-center items-center cursor-pointer border border-black rounded-lg">
+              <div className="md:w-[40%] w-[90%] md:h-full h-[40%]  flex justify-center items-center cursor-pointer border border-black rounded-lg" onClick={handeldata}>
                 <p>Add to Cart</p>
                 <HiShoppingCart className="h-6 w-6 cursor-pointer ml-3" />
               </div>
