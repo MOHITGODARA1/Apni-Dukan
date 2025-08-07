@@ -2,12 +2,15 @@ import headphone1 from "../../assets/headphone.png"
 import phone1 from "../../assets/phone.png"
 import phone2 from "../../assets/phone.png"
 import headphone2 from "../../assets/headphone.png"
+import { useNavigate } from "react-router-dom"
 export function TopRated(){
+    const navigate=useNavigate();
     const items=[
-      {id:1,name:"headset",Image:headphone1,deal:"Explore Now"},
-      {id:2,name:"phone",Image:phone1,deal:"Wishlist"},
-      {id:3,name:"headset",Image:headphone2,deal:"Grab Now"},
-      {id:4,name:"phone",Image:phone2,deal:"Big Saving"},
+      {id:1,name:"headset",Image:headphone1,deal:"Explore Now",price:10000,oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:2,name:"phone",Image:phone1,deal:"Wishlist",price:10000,oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:3,name:"headset",Image:headphone2,deal:"Grab Now",price:10000,oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:4,name:"phone",Image:phone2,deal:"Big Saving",price:10000,oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
+      {id:4,name:"phone",Image:phone2,deal:"Big Saving",price:10000,oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."}
     ]
     return(
         <>
@@ -23,7 +26,9 @@ export function TopRated(){
                 {
                   items.map((item)=>{
                     return(
-                      <div className="h-50 mt-4 md:w-35 w-29 flex flex-col gap-2 rounded-lg cursor-pointer bg-gray-100" key={item.id}>
+                      <div className="h-50 mt-4 md:w-35 w-29 flex flex-col gap-2 rounded-lg cursor-pointer bg-gray-100" key={item.id} onClick={()=>{
+                        navigate("/Product",{state:item});
+                      }}>
                         <div className="h-[70%] w-full">
                           <img src={item.Image} alt="not found" className="h-full w-full object-contain" />
                         </div>

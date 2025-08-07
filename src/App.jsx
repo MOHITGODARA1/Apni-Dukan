@@ -10,6 +10,9 @@ import { Grocerypage } from "./page/Grocerypage"
 import { ProductPage } from "./page/Product"
 import { CartPage } from "./page/Cartpage"
 import { CartProvider } from "./component/storedata/cartdata"
+import { BuyNowPage } from "./page/BuynowPage"
+import { AdressPage } from "./page/adressPage"
+import { PaymentPage } from "./page/paymentPage"
 function App() {
   return (
     <>
@@ -23,8 +26,11 @@ function App() {
             <Route path="/Electronicpgae" element={<ElectronicsPage />} />
             <Route path="/fastfoodpage" element={<FastFoodpage />} />
             <Route path="/Grocerypage" element={<Grocerypage />} />
-              <Route path="/Product" element={<ProductPage />} />
-              <Route path="/Cartpage" element={<CartPage />} />
+            <Route path="/Product" element={<ProductPage />} />
+            <Route path="/Cartpage" element={<CartPage />} />
+            <Route path="/BuynowPage" element={<BuyNowPage />} />
+            <Route path="/adressPage" element={<AdressPage />} /> 
+            <Route path="/paymentPage" element={<PaymentPage />} />
           </Routes>
         </CartProvider>
     </>

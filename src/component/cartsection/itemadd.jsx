@@ -1,15 +1,19 @@
 import { UseCart } from "../storedata/cartdata";
-
+import { HiMenu, HiX, HiShoppingCart } from "react-icons/hi";
+import { useNavigate } from "react-router-dom";
 export function ItemAdd() {
   const { cart, removeFromCart } = UseCart(); // Assuming you have removeFromCart()
-
+  const navigate=useNavigate();
   // Total calculation
   const total = cart?.item?.reduce((acc, item) => acc + item.price * item.quantity, 0) || 0;
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
-      <h1 className="text-xl font-semibold mb-4">My Cart</h1>
-
+    <div className=" bg-gray-100 p-4">
+      <div className="flex mt-3 mb-3 justify-start items-center">
+        <HiShoppingCart className="h-6 w-6 text-gray-700 cursor-pointer ml-3" />
+        <h1 className="text-xl font-semibold ml-2">My Cart</h1>
+      </div>
+      <div className="h-[1px] bg-black"></div>
       {cart?.item?.length > 0 ? (
         <>
           {cart.item.map((item, index) => (
@@ -74,13 +78,15 @@ export function ItemAdd() {
               <span>₹{total}</span>
             </div>
 
-            <button className="w-full bg-[#489fb5] hover:bg-[#357d92] mt-4 py-2 text-white rounded-md">
+            <button className="w-full bg-[#489fb5] hover:bg-[#357d92] mt-4 py-2 text-white rounded-md" onClick={()=>{navigate('/BuynowPage')}}>
               Buy Now
             </button>
           </div>
         </>
       ) : (
-        <p className="text-center text-gray-500">Your cart is empty.</p>
+        <div className="h-32 flex justify-center items-center">
+          <p className="text-center text-gray-500">Your cart is empty.</p>
+        </div>
       )}
     </div>
   );
