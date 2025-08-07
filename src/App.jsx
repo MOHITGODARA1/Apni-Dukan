@@ -13,6 +13,7 @@ import { CartProvider } from "./component/storedata/cartdata"
 import { BuyNowPage } from "./page/BuynowPage"
 import { AdressPage } from "./page/adressPage"
 import { PaymentPage } from "./page/paymentPage"
+import { ContactUs } from "./page/Contactus"
 function App() {
   return (
     <>
@@ -31,6 +32,7 @@ function App() {
             <Route path="/BuynowPage" element={<BuyNowPage />} />
             <Route path="/adressPage" element={<AdressPage />} /> 
             <Route path="/paymentPage" element={<PaymentPage />} />
+            <Route path="/ContactUs" element={<ContactUs />} />
           </Routes>
         </CartProvider>
     </>

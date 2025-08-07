@@ -1,13 +1,14 @@
 import React,{useState} from "react"
 import { HiMenu, HiX, HiShoppingCart } from "react-icons/hi";
 import { UseCart } from "../storedata/cartdata";
-
+import { useNavigate } from "react-router-dom";
 export function ProductDetail({product}){
   const {dispatch}=UseCart();
-  const [value,setvalue]=useState(0);
+  const [value,setvalue]=useState(1);
+  const navigate=useNavigate();
   // const [data,setdata]=useState();
   function handelminus(){
-    if(value>0){
+    if(value>1){
       setvalue(value-1);
     }
   }
@@ -15,15 +16,20 @@ export function ProductDetail({product}){
     setvalue(value+1);
   }
   function handeldata(){
-    if(value===0){
-      return alert("select the item");
-    }
+    
     const cartitem={
       ...product,
       quantity:value,
     }
     dispatch({type:"ADD_TO_CART",payload:cartitem});
     alert("item add");
+  }
+  function handelbuynow(){
+    const cartitem={
+      ...product,
+      quantity:value,
+    }
+    dispatch({type:"ADD_TO_CART",payload:cartitem});
   }
   return(
     <>
@@ -56,7 +62,10 @@ export function ProductDetail({product}){
                 <p>Add to Cart</p>
                 <HiShoppingCart className="h-6 w-6 cursor-pointer ml-3" />
               </div>
-              <div className="md:w-[40%] w-[90%] h-[40%] md:mt-0 mt-[5%] md:h-full md:ml-6 flex justify-center items-center cursor-pointer bg-[#489fb5] rounded-lg">
+              <div className="md:w-[40%] w-[90%] h-[40%] md:mt-0 mt-[5%] md:h-full md:ml-6 flex justify-center items-center cursor-pointer bg-[#489fb5] rounded-lg" onClick={()=>{
+                handelbuynow();
+                navigate("/buynowPage")
+              }}>
                 <p>Buy Now</p>
               </div>
           </div>

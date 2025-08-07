@@ -28,9 +28,9 @@ export function Navbar(){
         {/* Desktop Navigation */}
         <nav className="hidden md:flex w-[40%] justify-center items-center">
           <ul className="flex justify-evenly items-center w-full">
-              <a href=""><li>Home</li></a>
+              <a href="/"><li>Home</li></a>
               <a href=""><li>Dashbord</li></a>
-              <a href=""><li>contact us</li></a>
+              <a href="/Contactus"><li>contact us</li></a>
               <Link to="/Cartpage">
                 <HiShoppingCart className="h-6 w-6 cursor-pointer"/>
               </Link>
@@ -73,7 +73,7 @@ export function Navbar(){
         <nav className="md:hidden bg-white shadow-lg">
           <ul className="flex flex-col items-center p-4">
             <a href="" className="py-2"><li>Dashbord</li></a>
-            <a href="" className="py-2"><li>contact us</li></a>
+            <a href="/Contactus" className="py-2"><li>contact us</li></a>
           </ul>
         </nav>
       )}
