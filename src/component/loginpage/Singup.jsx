@@ -34,7 +34,7 @@ export function SingUP(){
                 <label htmlFor="name" className='font-semibold text-lg'>Name</label>
                 <br />
                 <input {...register("name",{required:true})}
-                className=' px-2 border border-black w-full md:w-[90%] mt-1 h-8 rounded-lg outline-none'
+                className=' px-2 border border-black w-full md:w-[90%] mt-1 h-10 md:h-8 rounded-lg outline-none'
                 id='name' 
                 placeholder='Enter name'/>
                 {errors.name && <p className='text-[15px] text-red-600'>Name is required</p>}
@@ -44,7 +44,7 @@ export function SingUP(){
                 <label htmlFor="number" className='font-semibold text-lg'>Mobile Number</label>
                 <br />
                 <input {...register("number",{required:true})}
-                className=' px-2 border border-black w-full md:w-[90%] mt-1 h-8 rounded-lg outline-none'
+                className=' px-2 border border-black w-full md:w-[90%] mt-1 h-10 md:h-8 rounded-lg outline-none'
                 id='number' 
                 placeholder='Enter Number'/>
                 {errors.number && <p className='text-[15px] text-red-600'>Number is required</p>}
@@ -54,7 +54,7 @@ export function SingUP(){
                 <label htmlFor="email" className='font-semibold text-lg'>Email(Optional)</label>
                 <br />
                 <input {...register("email",{required:false})}
-                className=' px-2 border border-black w-full md:w-[90%] mt-1 h-8 rounded-lg outline-none'
+                className=' px-2 border border-black w-full md:w-[90%] mt-1 h-10 md:h-8 rounded-lg outline-none'
                 id='email' 
                 placeholder='Enter Email'/>
                 {/* {errors.name && <p className='text-[5px] text-red-600'>Number is required</p>} */}
@@ -79,7 +79,7 @@ export function SingUP(){
                       <label htmlFor="adress" className='font-semibold text-lg'>Adress</label>
                       <br />
                       <input {...register("adress",{required:true})}
-                      className=' px-2 border border-black w-full md:w-[90%] mt-1 h-8 rounded-lg outline-none'
+                      className=' px-2 border border-black w-full md:w-[90%] mt-1 h-10 md:h-8 rounded-lg outline-none'
                       id='adress' 
                       placeholder='Enter Street name'/>
                       {errors.adress && <p className='text-[5px] text-red-600'>adress is required</p>}
@@ -118,7 +118,7 @@ export function SingUP(){
                       <label htmlFor="adress" className='font-semibold text-lg'>Adress/Shop name</label>
                       <br />
                       <input {...register("adress",{required:true})}
-                      className=' px-2 border border-black w-full md:w-[90%] mt-1 h-8 rounded-lg outline-none'
+                      className=' px-2 border border-black w-full md:w-[90%] mt-1 h-10 md:h-8 rounded-lg outline-none'
                       id='adress' 
                       placeholder='Enter Street name'/>
                       {errors.adress && <p className='text-[5px] text-red-600'>adress is required</p>}
@@ -127,7 +127,7 @@ export function SingUP(){
                       <label htmlFor="GSTnumber" className='font-semibold text-lg'>GST number(optional)</label>
                       <br />
                       <input {...register("gstnumber",{required:false})}
-                      className=' px-2 border border-black w-full md:w-[90%] mt-1 h-8 rounded-lg outline-none'
+                      className=' px-2 border border-black w-full md:w-[90%] mt-1 h-10 md:h-8 rounded-lg outline-none'
                       id='adress' 
                       placeholder='Enter GST number'/>
                       {/* {errors.gstnumber && <p className='text-[5px] text-red-600'>adress is required</p>} */}

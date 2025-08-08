@@ -9,7 +9,6 @@ export function TopRated(){
       {id:1,name:"headset",Image:headphone1,deal:"Explore Now",price:10000,oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
       {id:2,name:"phone",Image:phone1,deal:"Wishlist",price:10000,oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
       {id:3,name:"headset",Image:headphone2,deal:"Grab Now",price:10000,oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
-      {id:4,name:"phone",Image:phone2,deal:"Big Saving",price:10000,oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."},
       {id:4,name:"phone",Image:phone2,deal:"Big Saving",price:10000,oldprice:"12000",Discription:"Experience the next generation of wearable technology with the SmartCart Pro Smartwatch. Featuring advanced health tracking, seamless notifications, and a long-lasting battery, it's designed to keep you connected and healthy."}
     ]
     return(
@@ -26,7 +25,7 @@ export function TopRated(){
                 {
                   items.map((item)=>{
                     return(
-                      <div className="h-50 mt-4 md:w-35 w-29 flex flex-col gap-2 rounded-lg cursor-pointer bg-gray-100" key={item.id} onClick={()=>{
+                      <div className="h-50 mt-2 md:w-35 w-32 flex flex-col gap-2 rounded-lg cursor-pointer bg-gray-100 mb-2" key={item.id} onClick={()=>{
                         navigate("/Product",{state:item});
                       }}>
                         <div className="h-[70%] w-full">

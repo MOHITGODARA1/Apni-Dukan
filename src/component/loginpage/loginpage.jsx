@@ -28,13 +28,13 @@ export function Loginpage(){
                 <label htmlFor="name" className='font-semibold text-xl'>Mobile Number</label>
                 <br />
                 <input {...register("Number",{required:true})}
-                className=' px-2 border border-black md:w-[90%] w-full mt-1 h-8 rounded-lg outline-none'
+                className=' px-2 border border-black md:w-[90%] w-full mt-1 h-10 md:h-8 rounded-lg outline-none'
                 id='name' 
                 placeholder='Enter Number'/>
                 {errors.Number && <p className='text-[5px] text-red-600'>Number is required</p>}
               </div>
               <div>
-                <button type='Submit' className='md:w-[90%] w-full bg-[#489fb5] h-9 text-white mt-6 rounded-lg'>Genrate OTP</button>
+                <button type='Submit' className='md:w-[90%] w-full bg-[#489fb5] h-10 md:h-8 text-white mt-6 rounded-lg'>Genrate OTP</button>
               </div>
               <div>
                 <Link to='/singuppage'>
